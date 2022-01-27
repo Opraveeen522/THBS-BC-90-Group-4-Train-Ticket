@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+	<title>LOGIN</title>
+	<style>
+	
+	body {
+	
+    background: linear-gradient(230deg, #39b695, #29302e, #b93912, #3c9196, #3c9196, #151818, #4f3a7b, #a1769d, #3b3c7f, #0f1010, #397659, #090909);
+    background-size: 2400% 2400%;
+    -webkit-animation: AnimationName 100s ease infinite;
+    -moz-animation: AnimationName 100s ease infinite;
+    -o-animation: AnimationName 100s ease infinite;
+    animation: AnimationName 100s ease infinite;
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 97%}
+    50%{background-position:100% 4%}
+    100%{background-position:0% 97%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 97%}
+    50%{background-position:100% 4%}
+    100%{background-position:0% 97%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 97%}
+    50%{background-position:100% 4%}
+    100%{background-position:0% 97%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 97%}
+    50%{background-position:100% 4%}
+    100%{background-position:0% 97%}
+}
+
+		h1{
+		text-shadow: 1px 1px white;
+		text-align: center;
+		color:yellow;
+		font-size: 20px;
+		}
+		form{
+		color:red;
+		text-align:center;
+		}
+		a {
+			padding: 20px 20px;
+			display: inline-block;
+			color: orange;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+			text-decoration: none;
+			font-size: 0.7em;
+			overflow: hidden;
+		}
+
+		a:hover {
+			color: #111;
+			background:skyblue;
+			box-shadow: 0 0 50px orange;
+			border-radius: 50px 50px;
+		}
+		
+*[role="form"] {
+    max-width: 550px;
+    padding: 30px;
+    margin: 0 auto;
+    border-radius: 0.3em;
+    background-color: #f2f2f2;
+}
+
+*[role="form"] h2 { 
+    font-family: 'Open Sans' , sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+    margin-top: 10%;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    height:50%;
+}
+
+		
+	</style>
+</head>
+<body>
+ <header>
+	<h1 class="hd">TORRY HARRIS ONLINE RESERVATION BANGLORE</h1>
+	<!--  <div class="main">
+		<p1 class="menu"><a href="UserLogin.html">User_Login</a></p1>
+		<p1 class="menu"><a href="AdminLogin.html">Admin_Login</a></p1>
+	</div>-->
+	
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark sidebarNavigation" data-sidebarClass="navbar-dark bg-dark">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="">@Developers_Team_4</a>
+        <button class="navbar-toggler leftNavbarToggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="nav navbar-nav nav-flex-icons ml-auto">
+              
+               <div class="main">
+		<p1 class="menu"><a href="UserLogin.html">User_Login</a></p1>
+		<p1 class="menu"><a href="AdminLogin.html">Admin_Login</a></p1>
+	</div>
+               
+             </div>
+    </div>
+    </nav>
+</header>
+ <div class="container">
+            <form action="userreg" method="post" class="form-horizontal" role="form">
+                <h2>Registration</h2>
+                <div class="form-group">
+                    <label for="firstName" class="col-sm-3 control-label">UserName</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="firstName" name="uname" placeholder="Unique" required class="form-control"  autofocus>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="lastName" class="col-sm-3 control-label">Set Pa$$word</label>
+                    <div class="col-sm-9">
+                        <input type="password" id="password" name="pword" placeholder="Try $trong" required class="form-control" autofocus>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label  class="col-sm-3 control-label">Full name </label>
+                    <div class="col-sm-9">
+                        <input type="text" id="fullname"name="fname" required class="form-control" >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="col-sm-3 control-label">Age</label>
+                    <div class="col-sm-9">
+                        <input type="number" id="age" name="age" required class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="col-sm-3 control-label">Gender</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="gender" name="gender" required class="form-control">
+                    </div>
+                </div>
+                
+                       <div class="form-group">
+                    <label for="phoneNumber" class="col-sm-3 control-label">Phone no </label>
+                    <div class="col-sm-9">
+                        <input type="text" id="phoneNumber" name="phno" minlength = "10" maxlength = "10"  pattern="\d{10}" placeholder="10 digit" required class="form-control">
+                        <span class="help-block">don't worry your number won't be disclosed anywhere</span>
+                    </div>
+                </div>
+                
+                  <div class="form-group">
+                    <label for="email" class="col-sm-3 control-label">Mention Email </label>
+                    <div class="col-sm-9">
+                        <input type="email" id="email"name="mailid" placeholder="@ must" required class="form-control" name= "email">
+                    </div>
+                
+        
+                <input type="submit" value=" Click Here To Register " text-align="center">
+               
+                
+             
+            </form> 
+        </div>  
+
+</body>
+</html>
