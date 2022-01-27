@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>@Admin_LOGIN</title>
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<style>
+
+body{
+     background-image:url(img10.jpg);
+     background-size: 1550px 750px;
+}
+
+		h1{
+		text-align:center;
+		text-shadow: 1px 1px yellow;
+		color: red;
+		}
+		
+		h2
+		{text-align:center;
+		}
+		form{
+		color:white;
+		}
+		a {
+			padding: 20px 20px;
+			display: inline-block;
+			color: orange;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+			text-decoration: none;
+			font-size: 0.8em;
+			overflow: hidden;
+			border-radius: 40px 40px;
+		}
+
+		a:hover {
+			color: #111;
+			background: white;
+			box-shadow: 0 0 50px yellow;
+		}
+		
+	
+	input[type=button], input[type=submit], input[type=reset]  {
+	margin: 5px;
+  width: 35%;
+  border: 2px solid #f6f6f6;
+	
+  background-color: #56baed;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 13px;
+  -webkit-box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+  box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  margin: 5px 20px 40px 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover  {
+  background-color: #39ace7;
+   
+}
+
+
+input[type=text] {
+  background-color: #f6f6f6;
+  border: none;
+  color: #0d0d0d;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px;
+  width: 60%;
+  border: 2px solid #f6f6f6;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+input[type=text]:focus {
+  background-color:white;
+  border-bottom: 2px solid #5fbae9;
+ 
+}
+
+input[type=text]:placeholder {
+  color: #cccccc;
+   width: 60%;
+  height: 10%;
+}
+
+.wrapper {
+ 
+  display: flex;
+  align-items: center;
+  flex-direction: column; 
+  justify-content: center;
+  width: 100%;
+  min-height: 100%;
+  padding: 20px;
+}
+
+#formContent {
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  background: #fff;
+  padding: 20px;
+  width: 70%;
+  max-width: 450px;
+  position: relative;
+  padding: 0px;
+  -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+  box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+  text-align: center;
+}
+	</style>
+</head>
+<body>
+<header>
+	<h1 class="hd">TORRY HARRIS ONLINE RESERVATION BANGLORE <br/>[ THBS ]</h1>
+	
+</header>
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark sidebarNavigation" data-sidebarClass="navbar-dark bg-dark">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler leftNavbarToggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="nav navbar-nav nav-flex-icons ml-auto">
+        <p1 class="menu"><a href="UserLogin.html">User_Login</a></p1>
+		<p1 class="menu"><a href="UserRegister.html">New User</a></p1>
+		<p1 class="menu"><a href="AdminLogin.html">Admin_Login</a></p1>
+               <div class="main">
+		
+	</div>
+               
+             </div>
+    </div>
+    </nav>
+	<h2>Admin Login</h2>
+	<div class="wrapper fadeInDown">
+  <div id="formContent">
+	<form action="adminlogin" class="tab brown" method="post">
+      <input type="text" id="login" class="fadeIn second" name="auname" placeholder="login">
+      <input type="text" id="password" class="fadeIn third" name="apword" placeholder="password">
+      <input type="submit" class="fadeIn fourth" value="Log In">
+    </form>
+
+</body>
+</html>
